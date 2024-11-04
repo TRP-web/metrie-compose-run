@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  front-end:
+    # build: front-end/
+    image: trpweb/metrie-front-end:one
+    ports:
+      - 3000:3000
+    command: npm start
+  back-end:
+    # build: back-end/
+    # volumes: # - D:\web\full-stack\chat-plombier\back-end:/app/back-end
+    image: trpweb/metrie-back-end:one
+    ports:
+      - 3001:3001
+    command: node index.js
