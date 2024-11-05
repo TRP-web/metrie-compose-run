@@ -7,7 +7,6 @@ services:
     ports:
       - 3000:3000
     command: npm start
-    network_mode: host
   back-end:
     # build: back-end/
     # volumes: # - D:\web\full-stack\chat-plombier\back-end:/app/back-end
