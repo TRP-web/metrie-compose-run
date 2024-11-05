@@ -14,4 +14,3 @@ services:
     ports:
       - 3001:3001
     command: node index.js
-    network_mode: host
